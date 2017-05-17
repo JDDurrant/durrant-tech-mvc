@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<%# <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">%>
+		<title><%= title %> - <%= site.title %></title>
+		<%# stylesheets %>
+		<link rel="stylesheet" href="/bower/font-awesome/css/font-awesome.min.css" media="screen" title="Standard">
+
+		<%# <link rel="stylesheet" href="/css/index.css" media="screen" title="Standard">%>
+		<link rel="stylesheet" href="/css/index.css" media="screen" title="Standard">
+		<%# scripts %>
+		<%# <script data-main="/js/bundle.js" src="/bower/requirejs/require.js" charset="utf-8"></script>%>
+		<%# <script src="/bower/jquery/dist/jquery.min.js" charset="utf-8"></script>
+		<script src="/bower/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>%>
+
+		<script src="/js/bundle.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="fixed">
+			<header id="header">
+				<div class="wrapper">
+					<aside>
+						<a href="/" class="logo" id="site-title">Durrant.tech</a>
+					</aside>
+					<section>
+						<div class="hidden" id="header-title">
+							<%= title %>
+						</div>
+					</section>
+					<aside>
+						<div class="hidden" id="corner-search">
+							<%- include('forms/search') %>
+						</div>
+					</aside>
+				</div>
+			</header>
+			<main id="main">
+				<div class="wrapper">
+					<aside>
+						<%- include('parts/navigation') %>
+					</aside>
+					<section></section>
+					<aside>
+						<span class="fa fa-chevron-right" aria-hidden="true"></span>
+						Right sidebar (QR code, search listings)
+					</aside>
+				</div>
+			</main>
+			<footer id="footer">
+				<div class="wrapper">
+					<aside>
+						<a href="/contact" style="width: 100%;">
+							Jack@Durrant.tech
+							<i class="fa fa-envelope-o right" aria-hidden="true"></i>
+						</a>
+					</aside>
+					<section>
+						<div class="left">
+							6 comments
+						</div>
+						<div class="right">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+						</div>
+					</section>
+					<aside>
+						Right sidebar
+					</aside>
+				</div>
+			</footer>
+		</div>
+		<div class="scrollable">
+			<header>
+				<div class="wrapper">
+					<aside></aside>
+					<section>
+						<div id="header-search">
+							<%- include('forms/search') %>
+						</div>
+					</section>
+					<aside></aside>
+				</div>
+			</header>
+			<main class="main section" id="main">
+				<div class="wrapper">
+					<aside><!-- Scrolling sidebar; probably leave empty --></aside>
+					<section id="content">
+						<%- include('templates/article') %>
+					</section>
+					<aside><!-- Scrolling sidebar; probably leave empty --></aside>
+				</div>
+			</main>
+			<footer>
+				Scrollable<br>footer
+			</footer>
+		</div>
+	</body>
+</html>

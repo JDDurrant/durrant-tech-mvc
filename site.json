@@ -1,0 +1,43 @@
+{
+	"title": "Durrant.tech",
+	"domain": "http://durrant.tech",
+
+	"navigation": [
+		{ "text": "About me",	"href": "http://jack.durrant.tech",	"class": "section" },
+		{ "text": "Education",	"href": "http://jack.durrant.tech#education" },
+		{ "text": "Experience",	"href": "http://jack.durrant.tech#experience" },
+		{ "text": "Skills",		"href": "http://jack.durrant.tech#skills" },
+
+		{ "text": "Test Links",	"href": "http://localhost:3000",		"class": "section" },
+		{ "text": "Test Form",	"href": "http://localhost:3000/article/test-form",	"class": "ajax",
+								"ajax": "http://localhost:3000/api/test-form" },
+		{ "text": "Hello World","href": "http://localhost:3000/article/hello-world","class": "ajax",
+		 						"ajax": "http://localhost:3000/api/hello-world"},
+
+		{ "text": "Blog",		"href": "http://jackdurrant.com",	"class": "section" },
+		{ "text": "Technology",	"href": "http://jackdurrant.com/category/tech-blog" },
+		{ "text": "Reviews",	"href": "http://jackdurrant.com/category/reviews" },
+		{ "text": "Autism",		"href": "http://jackdurrant.com/?s=autism" },
+		{ "text": "Music",		"href": "http://buskinginbrighton.com" },
+
+		{ "text": "About me",	"href": "http://jack.durrant.tech",	"class": "section" },
+		{ "text": "Education",	"href": "http://jack.durrant.tech#education" },
+		{ "text": "Experience",	"href": "http://jack.durrant.tech#experience" },
+		{ "text": "Skills",		"href": "http://jack.durrant.tech#skills" },
+
+		{ "text": "Blog",		"href": "http://jackdurrant.com",	"class": "section" },
+		{ "text": "Technology",	"href": "http://jackdurrant.com/category/tech-blog" },
+		{ "text": "Reviews",	"href": "http://jackdurrant.com/category/reviews" },
+		{ "text": "Autism",		"href": "http://jackdurrant.com/?s=autism" },
+
+		{ "text": "About me",	"href": "http://jack.durrant.tech",	"class": "section" },
+		{ "text": "Education",	"href": "http://jack.durrant.tech#education" },
+		{ "text": "Experience",	"href": "http://jack.durrant.tech#experience" },
+		{ "text": "Skills",		"href": "http://jack.durrant.tech#skills" },
+
+		{ "text": "Blog",		"href": "http://jackdurrant.com",	"class": "section" },
+		{ "text": "Technology",	"href": "http://jackdurrant.com/category/tech-blog" },
+		{ "text": "Reviews",	"href": "http://jackdurrant.com/category/reviews" },
+		{ "text": "Autism",		"href": "http://jackdurrant.com/?s=autism" }
+	]
+}

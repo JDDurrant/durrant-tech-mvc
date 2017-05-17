@@ -1,0 +1,5 @@
+<nav class="nav">
+	<% site.navigation.forEach(function(link) { %>
+		<a href="<%= link.href %>" class="<%= link.class %>" data-xhr="<%= link.ajax %>"><%= link.text %></a>
+	<% }) %>
+</nav>

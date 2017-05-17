@@ -1,0 +1,32 @@
+{
+  "name": "durrant-tech",
+  "version": "0.1.0",
+  "description": "My new personal website; an online CV and a replacement of my old WordPress blog.",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:./server NODE_ENV=production node app",
+    "test": "NODE_PATH=$NODE_PATH:./server NODE_ENV=development nodemon app"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "ejs",
+    "mvc"
+  ],
+  "author": "Jack Durrant",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "browserify-middleware": "^7.1.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "express-less": "^0.1.0",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.8.4",
+    "requirejs": "^2.3.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.8.1"
+  }
+}

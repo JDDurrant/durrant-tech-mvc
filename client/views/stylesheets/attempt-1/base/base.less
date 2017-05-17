@@ -1,0 +1,35 @@
+/**
+ * selector {
+ *     [layout];
+ *     [theme];
+ * }
+ *
+ */
+
+// Block -------------------------------------------------------------------- //
+body {
+	margin: 0;
+	// Appearance
+	background: @background;
+	color: #000;
+	font-family: @font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
+	// Appearance
+	font-family: "Roboto Slab", @font;
+	font-weight: 400;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+textarea { font-family: @font; }
+
+// Inline ------------------------------------------------------------------- //
+
+a {
+	color: @link;
+}

@@ -1,0 +1,62 @@
+@import '../module/placeholder';
+
+.grid {
+	box-sizing: border-box;
+	overflow: auto;
+	padding: 4px;
+
+	.full, .half, .third, .left, .right, {
+		box-sizing: border-box;
+		float: left;
+		padding: 4px;
+		position: relative;
+	}
+
+	.full	 { width: 100%; }
+	.half	 { width: 50%; }
+	.third	 { width: 33.33333333%; }
+	.quarter { width: 25%; }
+	.fifth	 { width: 20%; }
+
+	.right {
+		float: right;
+	}
+
+	.txt, .btn {
+		box-sizing: border-box;
+		padding: 4px 6px;
+		font-size: 14px;
+	}
+
+	.placeholder(#444);
+
+	.btn {
+		margin: 0 2px;
+
+		&:first-child { margin-left: 0; }
+		&:last-child  { margin-right: 0; }
+	}
+}
+
+.toolbar .grid {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	.txt, .btn {
+		margin: 0;
+		background: transparent;
+		box-shadow: none;
+		font-size: 18px;
+	}
+}
+
+.header .txt,
+.header .btn {
+	height: @top-toolbar-height;
+}
+
+.footer .txt,
+.footer .btn {
+	height: @bottom-toolbar-height;
+}

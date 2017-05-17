@@ -1,0 +1,36 @@
+.nav a {
+	display: block;
+	margin: 4px;
+	width: 100%;
+	// Appearance
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration: none;
+	transition:
+		color 0.3s,
+		padding 0.3s;
+
+	&.section {
+		margin-top: 12px;
+		margin-left: 0;
+		font-weight: 400;
+	}
+
+	&.active {
+		color: @link;
+	}
+
+	&:last-child {
+		margin-bottom: 12px;
+	}
+
+	&:hover {
+		padding-left: 4px;
+		color: @link;
+	}
+
+	&:active {
+		color: @link;
+	}
+}

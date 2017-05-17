@@ -1,0 +1,41 @@
+.main {
+	margin: @top-toolbar-height auto @bottom-toolbar-height;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.sidebar {
+	position: absolute;
+	z-index: 1;
+
+	&-left {
+		left: 0;
+		width: @left-sidebar-width;
+	}
+
+	&-right {
+		right: 0;
+		width: @right-sidebar-width;
+	}
+}
+
+.main .sidebar {
+	position: fixed;
+	top: @top-toolbar-height;
+	bottom: @bottom-toolbar-height;
+	left: auto;
+	right: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	&-right {
+		margin-left: @content-width + @left-sidebar-width;
+	}
+}
+
+.content {
+	left: @left-sidebar-width;
+	right: @right-sidebar-width;
+	position: absolute;
+}
